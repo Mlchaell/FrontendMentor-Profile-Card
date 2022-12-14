@@ -47,6 +47,9 @@ html:focus-within {
 /* Set core body defaults */
 body {
   background-color: var(--clr-200);
+  background-image: url("imgs/bg-pattern-top.svg");
+  background-repeat: repeat-x;
+  background-position-x: -80%;
 
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125rem;
@@ -116,6 +119,8 @@ select {
 }
 
 .card__bottom-half {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   border-radius: 15px;
   overflow: hidden;
@@ -151,9 +156,9 @@ select {
 }
 
 .pfp {
+  align-self: center;
   position: absolute;
   z-index: 1;
-  margin-left: 30%;
 
   border: 3px solid white;
   border-radius: 100px;
